@@ -77,6 +77,13 @@ When an issue arises, the cloud can provide a solution to this probroblem in the
 
 ## What are the different types of cloud service?
 
+- Private Clouds: cloud computing environments that provide IT infrastructure services to a particular user or organization. They are managed by the organization itself or by a third-party vendor.
+- Public Clouds: cloud computing services that are provided by third-party vendors through the public Internet. They are accessible to anyone who wants to use or buy them.
+- Hybrid Clouds: cloud computing environments that combine private and public clouds. They allow data and applications to move between the two types of clouds.
+- Multi-Clouds: cloud computing strategies that use multiple cloud providers to meet different business needs. They can increase flexibility, reliability, and security.
+
+
+
 Advantages
 - external storage of applications and data
 - efficient way of providing applications to users

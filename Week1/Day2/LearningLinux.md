@@ -56,6 +56,8 @@ cat file1.txt file2.txt > combined_files.txt
 - tail -n : prints the last n lines from the sprecified ext file
 - nl: this will add line numbers to every line in your file
 - grep: this finds a word within a file
+- touch: creates the following file
+- 
 ```
 cat joke.txt | grep "the chicken"
 //eveerything before the pipe is a command

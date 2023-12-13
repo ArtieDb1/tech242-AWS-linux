@@ -39,4 +39,9 @@ once you have downloaded this and put it into a hidden .ssh folder, then you can
 
 ![Alt text](<../../readme-images/runAVM command.png>)
 
+```
+ssh -i "~/.ssh/tech242.pem" ubuntu@ec2-3-248-222-178.eu-west-1.compute.amazonaws.com
+
+```
+
 3. At this poing will be logged in to your virtual machine and will now be able to [Run Linux Commands.](LearningLinux.md)

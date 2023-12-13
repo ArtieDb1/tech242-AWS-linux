@@ -55,10 +55,12 @@ Private IP:
 
 Analogy: Private IPs are like room numbers within a building.
 Explanation: Private IPs are internal addresses within the VPC for communication between instances.
+
 Security Group:
 
 Analogy: Security groups are like security teams or guards for buildings.
 Explanation: Security groups act as virtual firewalls, controlling inbound antd outbound traffic for instances.
+
 Inbound Rules:
 
 Analogy: Inbound rules are like entry permissions for buildings.
@@ -67,10 +69,12 @@ Outbound Rules:
 
 Analogy: Outbound rules are like exit permissions from buildings.
 Explanation: Outbound rules define allowed outgoing traffic from instances to specific destinations.
+
 AMI (Amazon Machine Image):
 
 Analogy: AMIs are like blueprints or templates for building houses.
 Explanation: AMIs are pre-configured templates used to create EC2 instances, containing the operating system, software, and configurations.
+
 Key Pair:
 
 Analogy: Key pairs are like a set of unique keys to access specific rooms.

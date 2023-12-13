@@ -8,6 +8,7 @@ A shell is simply just an interface that runs commands. Meaning bash is a specia
 ## Bash commands
 In linux there are many useful bash commands. The following are the commands that are useful to know within the terminal:
 
+- -y: tells the terminal to do the following command without any questions
 - uname: prints operating system that youre in
 - whoami: prints the name of the user profile that is being logged
 - cat: prints an output

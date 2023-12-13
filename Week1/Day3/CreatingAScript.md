@@ -16,6 +16,14 @@ Please note that you do not need to use a touch command to create a new file if 
 #!/bin/bash/
 ```
 The line stated above is to be used at the beginning of every BASH file which tells the runner to go and find a BASH interprater using the given path.
-The rest of the file is used for your commands 
+The rest of the file is used for your commands. Look at the following screenshot.
+
+![Alt text](../../readme-images/provisionSHFile.png)
+
+This screenshot shows a list of commands that will install the nginx web server using terminal.
+As a devops engineer, one thing you must always do is test all of your commands before putting them into a script. 
+Before putting these into a nano editor we tested these commands individually:
+1. sudo apt update -y will update every package within the list of packages in 
+
 
 

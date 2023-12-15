@@ -1,0 +1,41 @@
+#!/bin/bash
+# you will need a JDK
+# you will need maven
+
+# you want  to update and upgrade everything first
+sudo apt update -y
+sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+
+# install maven
+echo "Installing maven"
+
+sudo DEBIAN_FRONTEND=noninteractive apt install maven -y
+
+echo "Maven should be installed"
+echo ""
+
+# check that maven is installed
+echo "Maven Version:"
+mvn -v
+
+
+# install JDK
+echo "Installing Java 17"
+sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y
+echo "Java installed"
+
+# Check that the JDK is installed
+java -version
+
+# change directory to the home
+# cd ~
+
+git clone https://github.com/ArtieDb1/java-atlas-app.git repo
+
+cd repo/springapi
+
+echo "Starting"
+mvn spring-boot:start
+
+
+# sudo chmod u+x <script>

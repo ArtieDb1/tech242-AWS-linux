@@ -79,3 +79,8 @@ Sudo will log you in as a super user. It means Super User DO the following.
 if you use sudo, it will also allow you to access the root directory. Without it, you can't change directory to the root folder.
 
 ***Remember, that every time you see a forward slash (/) at the beginning of a path, it means that it is an absolute path and the top of it will be the root directory
+
+## Environment variables
+Just like you have a pwd
+
+ps aux...

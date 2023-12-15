@@ -33,7 +33,8 @@ Now that you have set up the EC2 VM, you will want to log into your virtual mach
 Before running the VM, one must have a file that holds the key pair values. These are private keys that only you should have and NEVER share.
 once you have downloaded this and put it into a hidden .ssh folder, then you can open git bash. To run the VM, the steps are as follows.
 
-1. Go to the .ssh folder using the terminal and type in the following command : chmod 400 tech242.pem
+1. Go to the .ssh folder using the terminal and type in the following command: chmod 400 tech242.pem which will give all the standard permissions to connect to the VM.
+
 2. Once you have done this, you can now type in the command given by AWS from before. your linux should look somethinglike the following:
 
 
@@ -44,4 +45,5 @@ ssh -i "~/.ssh/tech242.pem" ubuntu@ec2-3-248-222-178.eu-west-1.compute.amazonaws
 
 ```
 
-3. At this poing will be logged in to your virtual machine and will now be able to [Run Linux Commands.](LearningLinux.md)
+
+3. At this point will be logged in to your virtual machine and will now be able to [Run Linux Commands.](LearningLinux.md)

@@ -79,3 +79,6 @@ Key Pair:
 
 Analogy: Key pairs are like a set of unique keys to access specific rooms.
 Explanation: Key pairs consist of a public key and a private key used for secure access to EC2 instances, similar to having a special key to access a secure area.
+
+Below is a diagram that tries to visualise this analogy:
+![Alt text](<../../readme-images/EC2 Instance Analogy.png>)

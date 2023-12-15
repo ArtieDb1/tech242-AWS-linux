@@ -27,7 +27,6 @@
       - [Continuous Integration (CI):](#continuous-integration-ci)
       - [Continuous Deployment/Continuous Delivery (CD):](#continuous-deploymentcontinuous-delivery-cd)
   - [Case studies](#case-studies)
-  - [](#)
 
 
 ## Introduction
@@ -131,4 +130,4 @@ CD involves the automated deployment of validated code changes to production env
 - Google uses cloud services 
 - Amazon web services
 
-##
+

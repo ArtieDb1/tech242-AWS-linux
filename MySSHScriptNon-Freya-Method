@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# you will need a JDK
+# you will need maven
+
+# you want  to update and upgrade everything first
+sudo apt update -y
+sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+
+# install maven
+echo "Installing maven"
+
+sudo DEBIAN_FRONTEND=noninteractive apt install maven -y
+
+echo "Maven should be installed"
+echo ""
+
+# check that maven is installed
+echo "Maven Version:"
+mvn -v
+
+
+# install JDK
+echo "Installing Java 17"
+sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y
+echo "Java installed"
+
+# Check that the JDK is installed
+java -version
+
+## install apache
+echo "installing apache"
+sudo DEBIAN_FRONTEND=noninteractive apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+
+# sudo nano /etc/apache2/sites-available/000-default.conf
+
+VHOST_CONF="/etc/apache2/sites-available/000-default.conf"
+
+## if ....
+if grep -q 'ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+    ProxyPreserveHost On
+    ProxyPass / http://localhost:5000/
+    ProxyPassReverse / http://localhost:5000/
+
+    ErrorLog \${APACHE_LOG_DIR}/error.log
+    CustomLog \${APACHE_LOG_DIR}/access.log combined' /etc/apache2/sites-available/000-default.conf 
+    then
+    # The string exists, so nothing to do
+    echo "Reverse proxy already configured."
+else
+    # reverse proxy not configured yet
+    sed '19 a\
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+
+    ProxyPreserveHost On
+    ProxyPass / http://localhost:5000/
+    ProxyPassReverse / http://localhost:5000/
+
+    ErrorLog \${APACHE_LOG_DIR}/error.log
+    CustomLog \${APACHE_LOG_DIR}/access.log combined' /etc/apache2/sites-available/000-default.conf
+fi
+
+echo "apache installed"
+
+sudo systemctl restart apache2
+
+
+
+
+
+sudo git clone https://github.com/ArtieDb1/java-atlas-app.git repo
+
+cd repo/springapi
+
+echo "Starting"
+mvn spring-boot:start

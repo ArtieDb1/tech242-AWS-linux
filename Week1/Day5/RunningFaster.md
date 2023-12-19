@@ -95,7 +95,7 @@ Starting apache again error:
 ![Alt text](../../readme-images/StartApacheError.png)
 
 
-At this point I called the team and we eddited the commands to the following after apache was installed. It involved deleting the original conf file that we had created (your-site.conf)
+At this point I called the team and we edited the commands to the following after apache was installed. It involved deleting the original conf file that we had created (your-site.conf)
 
 1. In the root directory type, sudo nano /etc/apache2/sites-available/000-default.conf
 2. Then type this into the conf file:
@@ -112,3 +112,5 @@ ubuntu@ip-172-31-54-199:/$ sudo systemctl status apache2
 ```
 
 4. Your new AMI should be running and it is now time to script it
+
+![Alt text](<../../readme-images/Running manual apache server.png>)

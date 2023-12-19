@@ -1,3 +1,19 @@
+# what is a process
+Somthing in memory that is possibly being used by the CPU. We say possibly because it is data that looks like its being processed by the cpu. 
+There are 2 types:
+1. System processes
+2. User Processes - the command ps lists all of the user processes.
+3. Processes provide services and dont actually provide an end interface for a user
+
+
+ps aux - lists all of the processes with their details. is the command ends in d (demon), it means it is a background process
+top - This is a process that shows all of the processes using the most cpu
+
+to kill  a process, you must type in kill -q <process ID> - this will brute force kill a process
+
+sleep 500 & - The & makes the sleep process run in the background 
+
+Concurrent processing is just switching between processes very fast. 1 cpu, processes are sone one at a time
 # Creating a script in bash
 In this section, we will be creating script files to help with automation within Linux
 A scritpt file is a file that is filled with linux commands. 

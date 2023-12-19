@@ -63,3 +63,4 @@ The script was derived with the help of AI and correctly configures Apache.
 
 ### Step 3 Running Apache
 Using the steps from last week, we can now use the final script to test apache's functionality.
+

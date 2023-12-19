@@ -37,4 +37,29 @@ sudo a2enmod proxy_http
 
 ### Step 2: Configuring Apache
 
-Now that Apache has been installed, the next step is to configure it so that it knows what to do with the
+Now that Apache has been installed, the next step is to configure it so that it knows what to do with the code that you give it.
+The following is the script on how to do that:
+
+```
+VHOST_CONF="/etc/apache2/sites-available/000-default.conf"
+
+cat <<EOF | sudo tee "$VHOST_CONF" > /dev/null
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+    ProxyPreserveHost On
+    ProxyPass / http://localhost:5000/
+    ProxyPassReverse / http://localhost:5000/
+
+    ErrorLog \${APACHE_LOG_DIR}/error.log
+    CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+EOF
+
+```
+The script was derived with the help of AI and correctly configures Apache. 
+
+### Step 3 Running Apache
+Using the steps from last week, we can now use the final script to test apache's functionality.

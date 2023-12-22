@@ -1,0 +1,13 @@
+#!/bin/bash
+export DATABASE_VM_IP="172.31.40.21"
+export DATABASE_PORT="3306"
+export TIMEOUT=2  # Timeout for the connection attempt (in seconds)
+
+export DB_USER=root
+export DB_PASS=root
+export DB_HOST=jdbc:mysql://$DATABASE_VM_IP:3306/world
+sudo systemctl restart apache2
+
+cd /tech242-2-tier-deploy-with-world-api/WorldProject/WorldProject/
+
+mvn clean package spring-boot:start

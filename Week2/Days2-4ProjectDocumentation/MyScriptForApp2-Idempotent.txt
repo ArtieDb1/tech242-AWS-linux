@@ -1,0 +1,61 @@
+#!/bin/bash
+
+export DATABASE_VM_IP="172.31.55.191"
+export DATABASE_PORT="3306"
+export TIMEOUT=2  # Timeout for the connection attempt (in seconds)
+
+if nc -zvw$TIMEOUT $DATABASE_VM_IP $DATABASE_PORT 2>&1 | grep -q "succeeded"; then
+export DB_USER=root
+export DB_PASS=root
+export DB_HOST=jdbc:mysql://$DATABASE_VM_IP:3306/world
+
+#update and upgrade
+sudo git clone https://github.com/ArtieDb1/tech242-2-tier-deploy-with-world-api.git
+sudo apt update -y
+sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+
+# Installing maven & java & apache
+mvn -v
+sudo DEBIAN_FRONTEND=noninteractive apt install maven -y
+sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y
+sudo DEBIAN_FRONTEND=noninteractive apt install apache2 -y
+
+# Enabling apache
+
+
+cd tech242-2-tier-deploy-with-world-api/WorldProject/WorldProject
+sudo -E mvn package spring-boot:start
+
+#starting apache
+sudo systemctl start apache2
+echo "Apache Started"
+sudo systemctl enable apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+
+VHOST_CONF="/etc/apache2/sites-available/000-default.conf"
+
+cat <<EOF | sudo tee "$VHOST_CONF" > /dev/null
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+    ProxyPreserveHost On
+    ProxyPass / http://localhost:5000/
+    ProxyPassReverse / http://localhost:5000/
+
+    ErrorLog \${APACHE_LOG_DIR}/error.log
+    CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+EOF
+
+echo "apache installed"
+sudo systemctl restart apache2
+
+
+
+echo "Connection to the database VM at $DATABASE_VM_IP on port $DATABASE_PORT succeeded."
+else
+    echo "Failed to connect to the database VM at $DATABASE_VM_IP on port $DATABASE_PORT."
+fi

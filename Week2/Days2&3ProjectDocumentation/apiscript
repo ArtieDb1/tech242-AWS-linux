@@ -1,3 +1,0 @@
-sudo git clone https://github.com/ArtieDb1/tech242-2-tier-deploy-with-world-api.git
-
-sudo DEBIAN_FRONTEND=noninteractive apt install mysql-server -y

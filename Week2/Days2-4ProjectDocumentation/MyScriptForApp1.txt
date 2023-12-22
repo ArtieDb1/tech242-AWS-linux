@@ -1,0 +1,20 @@
+#!/bin/bash
+
+export DB_USER=root
+export DB_PASS=root
+export DB_HOST=jdbc:mysql://172.31.55.191:3306/world
+
+#update and upgrade
+sudo git clone https://github.com/ArtieDb1/tech242-2-tier-deploy-with-world-api.git
+sudo apt update -y
+sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+
+# Installing maven & java & apache
+mvn -v
+sudo DEBIAN_FRONTEND=noninteractive apt install maven -y
+sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y
+sudo DEBIAN_FRONTEND=noninteractive apt install apache2 -y
+
+cd tech242-2-tier-deploy-with-world-api/WorldProject/WorldProject
+sudo -E mvn package spring-boot:start
+

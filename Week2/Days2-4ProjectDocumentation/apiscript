@@ -1,0 +1,12 @@
+sudo git clone https://github.com/ArtieDb1/tech242-2-tier-deploy-with-world-api.git
+
+sudo DEBIAN_FRONTEND=noninteractive apt install mysql-server -y
+
+## install java 
+
+mysql -u <username> -p -h <host>
+mysql -u root -p -h 192.168.1.100
+
+## sudo mvn clean
+## sudo mvn install
+## sudo mvn spring-boot:start

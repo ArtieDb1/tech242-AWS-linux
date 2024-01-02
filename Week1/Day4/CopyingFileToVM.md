@@ -11,5 +11,5 @@ scp /path/to/local/file username@remote-server:/path/on/remote/server //Basic id
 scp -i /path/to/private_key /path/to/local/file username@ec2-instance-ip:/path/on/ec2/instance //Example in practice 
 
 ```
-You must open up your Terminal and use this to find the 
+You must open up your Terminal and use this to run a script
 #!/bin/bash

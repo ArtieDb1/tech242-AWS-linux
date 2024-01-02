@@ -6,6 +6,21 @@ One of the services that cloud services are the virtualisation. This is a servic
 An EC2 is a virtual machine. In order to undertand the virtual machine, an analogy used effectivvely is likening the entire system to an apartment complex 
 [Insert apartment analogy here]
 
+Lets imagine that we have an apartment complex with many flats and apartments within it. 
+1. Region
+2. Virtual Private Cloud (VPC)
+3. Subnet
+4. Elastic network interface
+5. Elastic Block Store
+6. EC2 Instance
+7. Public IP
+8. Private IP
+9.  9 Security Group 
+10. Inbound rules 
+11. Outbound rules 
+12. AMI
+13. Key pair
+
 ## Steps to creating an EC2 VM
 
 To create an instance the steps are as follows

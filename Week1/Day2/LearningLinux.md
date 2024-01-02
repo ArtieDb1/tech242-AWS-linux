@@ -1,8 +1,8 @@
 # Learning Linux
 Linux is an operating system and it is imperitive that there a user knows how to navigate the terminal.
-The terminal uses BASH as its shell
+The terminal uses BASH as its shell 
 #### What is BASH
-Bash stands for Bourne Again SHell
+Bash stands for Bourne Again Shell
 A shell is simply just an interface that runs commands. Meaning bash is a special type of shell that is used by Linux.
 
 ## Bash commands

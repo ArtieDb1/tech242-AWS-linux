@@ -109,8 +109,8 @@ It's akin to purchasing hardware or software licenses outright, but in the cloud
 
 ## Market Structure
 The three largest cloud providers are Amazin, Google and Eicrosoft. They all offer their own version of cloud services. The diagram belows shows the market structure of all of the cloud service providers. 
-![Cloud Service Market Structure](../readme-images/CloudServiceMarketShares.png)
 
+![Cloud Servicce Market Structure](../../../readme-images/Week1Images/CloudServiceMarketShares.png)
 
 ## 4 Pillars of devops
 #### Collaboration:
@@ -129,5 +129,6 @@ CD involves the automated deployment of validated code changes to production env
 - Apple and iCloud
 - Google uses cloud services 
 - Amazon web services
+- Microsoft Azure
 
 

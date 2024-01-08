@@ -28,3 +28,45 @@ Here are the screenshots of how to complete the states steps
 
 ### 1.2 Launching template options
 
+![Alt text](../../readme-images/Week3Images/1.2.2Application.png)
+
+![Alt text](<../../readme-images/Week3Images/1.2.3Instance and key pair.png>)
+
+![Alt text](../../readme-images/Week3Images/1.2.4.png)
+
+**User data:**
+```
+#!/bin/bash
+cd /repo/springapi
+sudo mvn package
+sudo mvn spring-boot:start
+```
+
+## Step 2 - Create an Auto-scaling group(ASG)
+![Alt text](../../readme-images/Week3Images/3.4.png)
+
+![Alt text](../../readme-images/Week3Images/3.1.png)
+
+![Alt text](../../readme-images/Week3Images/3.1.1.png)
+
+![Alt text](../../readme-images/Week3Images/3.1.2.png)
+
+![Alt text](../../readme-images/Week3Images/3.1.3.png)
+
+![Alt text](../../readme-images/Week3Images/3.1.4.png)
+
+![Alt text](../../readme-images/Week3Images/3.4.1.png)
+
+#### Step 4 page
+
+![Alt text](../../readme-images/Week3Images/3.4.1.png)
+
+![Alt text](../../readme-images/Week3Images/3.4.2.png)
+
+#### Step 5 page 
+![Alt text](../../readme-images/Week3Images/3.5.png)
+
+#### Step 6
+
+![Alt text](../../readme-images/Week3Images/5.png)
+![Alt text](../../readme-images/Week3Images/5.1.png)

@@ -14,6 +14,7 @@
   - [Stages of Jenkins Pipeline](#stages-of-jenkins-pipeline)
   - [Alternatives to Jenkins](#alternatives-to-jenkins)
 - [Pipelines](#pipelines)
+        - [Remember that code is useless its in the hands of the end user. Once a feature has been completed, the changes are almost always in the hands of the users immediately](#remember-that-code-is-useless-its-in-the-hands-of-the-end-user-once-a-feature-has-been-completed-the-changes-are-almost-always-in-the-hands-of-the-users-immediately)
 
 # CICD
 
@@ -64,6 +65,9 @@ But here's the really neat part: Jenkins doesn't get tired! It keeps checking th
 3. **Extensibility:** Customizable through a wide range of plugins.
 4. **Community Support:** Large user community contributing to updates and knowledge.
 5. **Ease of Use:** User-friendly interface suitable for various skill levels.
+6. **Free**
+7. **Many plugins available**
+8. **Offers automation** - a benefit is that it saves time and money for a business while insuring robust code is provided and tested.
 
 ### Disadvantages:
 
@@ -71,6 +75,7 @@ But here's the really neat part: Jenkins doesn't get tired! It keeps checking th
 2. **Complex Setup:** Initial setup might demand technical expertise.
 3. **Maintenance Overhead:** Requires ongoing attention for updates and stability.
 4. **Security Concerns:** Improper configuration could pose security risks.
+5. **Constant feedback needed**
 
 ## Stages of Jenkins Pipeline
 
@@ -96,9 +101,12 @@ But here's the really neat part: Jenkins doesn't get tired! It keeps checking th
 
 6. **Bamboo:** Developed by Atlassian, Bamboo provides CI/CD capabilities, especially suited for teams using other Atlassian tools like Jira and Bitbucket.
 
-7. **Azure DevOps (formerly known as VSTS):** Offers a suite of tools for CI/CD, project management, and collaboration, deeply integrated with Microsoft's ecosystem.
+7. **Azure DevOps (formerly known as VSTS):** Offers a suite of tools for CI/CD, project management, and collaboration, deeply integrated with Microsoft's ecosystem. This is usually more private.
+
+
 
 # Pipelines
+##### Remember that code is useless its in the hands of the end user. Once a feature has been completed, the changes are almost always in the hands of the users immediately
 
 Imagine you're in charge of making your favorite pizza. A pipeline is a lot like your recipe for making that awesome pizza.
 
@@ -113,3 +121,6 @@ The business value is huge! It saves time, reduces mistakes, and helps everyone 
 ![Alt text](../../../readme-images/Week4Images/cicd/through-Continuous-Integration-and-Continuous-Delivery-pipeline.png)
 
 Image from: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bmc.com%2Fblogs%2Fwhat-is-ci-cd%2F&psig=AOvVaw1uQlEE-SclnyYPMaY32af3&ust=1704815926897000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCOj44LKUzoMDFQAAAAAdAAAAABAI
+
+
+

@@ -26,9 +26,9 @@ ssh-keygen -t rsa -b 4096 -C "artiedube7@gmail.com"
 
 
 
-![Alt text](<../../../readme-images/Week4Images/cicd/1.1Generating the keypair and storing in a file.png>)
+![Alt text](<../../readme-images/Week4Images/cicd/1.1Generating the keypair and storing in a file.png>)
 
-![Alt text](<../../../readme-images/Week4Images/cicd/1.1.1Public andPrivateKeys.png>)
+![Alt text](<../../readme-images/Week4Images/cicd/1.1.1Public andPrivateKeys.png>)
 
 ## Step 2 - Give the **PUBLIC** key to github
 
@@ -46,8 +46,8 @@ cat artie-github-key.pub
 
 Your screen should look like this:
 
-![Alt text](<../../../readme-images/Week4Images/cicd/2Giving Github the key.png>)
-![Alt text](../../../readme-images/Week4Images/cicd/2.1.png)
+![Alt text](<../../readme-images/Week4Images/cicd/2Giving Github the key.png>)
+![Alt text](../../readme-images/Week4Images/cicd/2.1.png)
 The shown image is a public key so its not bad to show
 DO NOT DO THIS WITH A PRIVATE KEY (Anything without the .pub extention)
 
@@ -73,7 +73,7 @@ ssh-add artie-github-key
 ```
 ssh -T git@github.com
 ```
-![Alt text](<../../../readme-images/Week4Images/cicd/3 Authenticating access.png>)
+![Alt text](<../../readme-images/Week4Images/cicd/3 Authenticating access.png>)
 
 The command works in other folders too because we want to be able to push from anyway
 
@@ -92,7 +92,8 @@ git remote add origin git@github.com:ArtieDb1/Test-ssh.git
 git push -u origin main
 ```
 
-![Alt text](../../../readme-images/Week4Images/cicd/pushedurl.png)
-
+![Alt text](../../readme-images/Week4Images/cicd/pushedurl.png)
 # Blockers!
 Open a new terminal and try to push the new file in the new terminal you get the following:
+
+![Alt text](<../../readme-images/Week4Images/cicd/Pushing with ssh.png>)

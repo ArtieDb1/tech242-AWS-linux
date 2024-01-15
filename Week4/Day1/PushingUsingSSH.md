@@ -1,12 +1,12 @@
 # Using SSH for CICD
 We want to set up ssh to push to GitHub
-So far we have been using https to push to get hub and not the ssh url
+So far we have been using https to push to github and not the ssh url
 
 ssh credentials are more secure than https 
 but the security flaw of ssh is that the system has to be 
 secure too
 
-An ssh key pair has to be generated and a key pair is madeusing an RSA algorithm
+An ssh key pair has to be generated and a key pair is made using an RSA algorithm
 each key pair has a private key and a public key 
 
 We want to genarate an ssh keypair using rsa algorithm on the loca computer

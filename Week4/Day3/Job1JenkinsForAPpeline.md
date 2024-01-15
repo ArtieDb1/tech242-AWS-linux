@@ -33,3 +33,4 @@ In the resulting window, fill out the **kind** section
 
 ![Alt text](../../readme-images/Week4Images/cicd/Jenkins/Day2Jenkins4SelectUserNameAndKey.png)
 
+### Ask Martin then Ramon or Sharukh

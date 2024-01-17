@@ -31,23 +31,23 @@ Advanced > Enable User Data [Depending on automation phase]
 Note that the advanced user data should be configured depending on what stage of automation you would like to develop first - if you would like to go slowly leave this disabled, but if you would like to go hands in with user-data, enable this option and paste the created app code later.
 
 ## Screenshots of configurations
-![Alt text](../read-me-images/Screenshot-image-size-config.png)
-![Alt text](../read-me-images/Screenshot-username-key.PNG)
+![Alt text](../../read-me-images/Screenshot-image-size-config.png)
+![Alt text](../../read-me-images/Screenshot-username-key.PNG)
 **Note that you may not be able to SSH immediately if your sec. group has not been configured to allow SSH from your IP**
 </br>
 
-![Alt text](../read-me-images/Screenshot-db-subnet.PNG)
+![Alt text](../../read-me-images/Screenshot-db-subnet.PNG)
 **Database VM configuration**
 </br>
 
-![Alt text](../read-me-images/Screenshot-app-subnet.PNG)
+![Alt text](../../read-me-images/Screenshot-app-subnet.PNG)
 **Application VM configuration**
 
 ## Noting Database private IP address
 It will be convenient to take note of the private IP address of the Database virtual machines as it will be repeatedly used within our Commands, BASH scripts and User Data scripts.
 This can be found under Virtual Machine > [Your Database VM] > Network Settings > Private IP Address
 
-![Alt text](../read-me-images/Screenshot-find-private-ip.PNG)
+![Alt text](../../read-me-images/Screenshot-find-private-ip.PNG)
 
 
 

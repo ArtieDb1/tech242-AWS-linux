@@ -7,9 +7,9 @@ In the context of our project, we want to create a public route table to dictate
 
 ## Creating a Public Route Table
 
-![Screenshot-create-route-tables.png](../read-me-images/Screenshot-create-route-tables.png)
+![Screenshot-create-route-tables.png](../../read-me-images/Screenshot-create-route-tables.png)
 
 * When creating a route table, it's important to give it a descriptive name, make sure it is created in the correct resource group, choose an appropriate region and decide whether to propagate gateway routes or not.
 * The decision to propagate gateway routes will depend on the project's specific network architecture and requirements. Propagating gateway routes essentially means including routes to on-premises networks or the internet in the route table.
 
-![Screenshot-public-route-table.png](../read-me-images/Screenshot-public-route-table.png)
+![Screenshot-public-route-table.png](../../read-me-images/Screenshot-public-route-table.png)

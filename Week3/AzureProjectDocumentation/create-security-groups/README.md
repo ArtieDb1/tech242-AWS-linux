@@ -15,10 +15,10 @@ There are 2 steps to achieving this:
 2. On That page, click on 'Create'
 
 3. Your page should then look like the following with all of the neccessary details filled out in the required boxes
-![Alt text](../read-me-images/CreatingASecurityGroup.png)
+![Alt text](../../read-me-images/CreatingASecurityGroup.png)
 
 4. To fill out the tags, you can use 'name' in the box labelled 'Name' and 'Tech-242-SG' in the box labelled 'Tag'
-![Alt text](../read-me-images/CreatingASecurityGroupTags.png)
+![Alt text](../../read-me-images/CreatingASecurityGroupTags.png)
 
 5. Now you can press 'Review + Create' to comlete the creation of our security group
 
@@ -34,7 +34,7 @@ Many of these are important things that should be initialized for a security gro
 
 ##### Inbound rules:
 
-![Alt text](../read-me-images/InboudSGRules.png)
+![Alt text](../../read-me-images/InboudSGRules.png)
 
 Please note that the rules aren't strict but unique to my project. Port 5000 was going to be a rule that allowed for reverse proxying. Port 8080 would allow for machine access through HTTP.The database security group would use ports 3306 to allow its own data to be accessed.
 
@@ -42,6 +42,6 @@ Please note that the rules aren't strict but unique to my project. Port 5000 was
 
 Once you have initiallized the the inbound rules, you can now look at the the subnets and associate them with a virtual network and make it a private or public subnet. It is common practice to make database private and then an application public.
 
-![Alt text](../read-me-images/AssociatingWithASubnet.png)
+![Alt text](../../read-me-images/AssociatingWithASubnet.png)
 
 With the other rules, the default settings have been used for the purpose of this project.
